@@ -23,10 +23,15 @@ __Código de base__
 ```html
     <div></div>
     <style>
+      *{
+        background: #5D3A3A;
+        padding: 0px;    
+        margin: 0px;
+      }
       div {
-        width: 100px;
-        height: 100px;
-        background: #dd6b4d;
+        width: 50%;
+        height: 67%;
+        background: #B5E0BA;
       }
     </style>
 ```
