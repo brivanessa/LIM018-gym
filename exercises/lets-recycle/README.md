@@ -50,3 +50,11 @@ salida = [
   ["out of date yogurt"]
 ]
 ```
+
+__Solución__
+```js
+function recycle(array) {
+  const filterItems = ((arr,value)=>(arr.filter((item)=>(item.material===value || item.secondMaterial===value))).map((item)=>(item.type)))
+  return [filterItems(array,"paper"), filterItems(array,"glass"), filterItems(array,"organic"), filterItems(array,"plastic") ]
+}
+```
