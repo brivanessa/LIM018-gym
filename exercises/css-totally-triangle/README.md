@@ -32,3 +32,21 @@ __Código de base__
 ```
 
 > *Hint:* [https://css-tricks.com/snippets/css/css-triangle/](https://css-tricks.com/snippets/css/css-triangle/)
+
+__Solución__
+```html
+<div></div>
+<style>
+  *{
+    margin:0;
+    background: #0B2429
+  }
+ div {
+  width:0px;
+  height:0px;
+  border-left:8.9rem solid #F3AC3C;
+  border-top:0rem solid transparent;
+  border-bottom: 8.9rem solid transparent; 
+}
+</style>
+```
