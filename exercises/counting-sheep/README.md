@@ -31,3 +31,10 @@ salida: 17
 > __Importante__ ❗
 >
 > _Pista_: No te olvides de verificar por valores malos como `null` o `undefined`
+>
+> __Solución__
+```js
+   function countSheeps(sheep) {
+  return (sheep.filter((item)=>item===true)).length
+}
+```
