@@ -38,3 +38,12 @@ Explicación: Sumando 0 -1 -5 = -6 entonces es par y como resultado 'even'
 >
 > - Si el arreglo de entrada está vacío, considéralo como:
 [0] (arreglo con cero).
+
+__Solución:__
+```js
+function oddOrEven(array) {
+ if(array.length>0){
+   return (array.reduce((a,b)=>{return a+b}))%2===0?"even":"odd"
+ }else{return "even"}
+}
+```
