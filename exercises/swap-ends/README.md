@@ -21,3 +21,13 @@ __Ejemplo__
     swapEnds([1, 2, 3]) → [3,2,1]
     swapEnds([8, 6, 7, 9, 5]) → [5,6,7,9,8]
 ```
+__Solución__
+```js
+  function swapEnds(nums){
+    if(nums.length>1){
+      const last = nums.pop();
+      const first = nums.shift();
+      return [last].concat(nums).concat([first])
+      } else {return nums}
+  }
+```
