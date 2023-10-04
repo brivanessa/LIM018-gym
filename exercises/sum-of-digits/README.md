@@ -30,3 +30,15 @@ Entrada: 942
 Salida: 6
 Explicación: sumando los digitos de 942 [9+4+2] --> 15 volver a sumar [1+5] el resultado es 6
 ```
+
+__Solución:__
+```js
+function digitalRoot(n) {
+  const nResult = (arr) => {
+   const nArray = (arr.toString().split("")).map((item)=>{return parseInt(item)})
+   return nArray.reduce((a,b)=>{return a+b})
+  }
+  //return nResult(n)
+  return (nResult(n)>=10)?digitalRoot(nResult(n)):nResult(n)
+}
+```
