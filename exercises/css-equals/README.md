@@ -27,3 +27,34 @@ __Código de base__
       }
     </style>
 ```
+__Solución__
+```html
+<div class="generalDiv">
+    <div class="yellow"></div>
+    <div class="orange"></div>
+</div>
+<style>
+ *{
+  background: #AA445F
+  }
+ .generalDiv {
+   height: 100%;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   gap: 50px;
+  }
+ .yellow, .orange {
+   width: 100px;
+   height: 200px;
+  }
+ .yellow {
+   border-radius: 200px 0 0 200px;
+   background: #F7EC7D
+  }
+ .orange {
+   border-radius: 0 200px 200px 0;
+   background: #E38F66
+  }
+</style>
+```
