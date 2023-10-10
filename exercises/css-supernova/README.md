@@ -23,7 +23,8 @@ Escriba el HTML/CSS en el editor para replicar la imagen objetivo de la derecha.
 __Código de base__
 
 ```html
-<div class=general>
+<div class=universal>
+  <div class=general>
     <div class="subgeneral1">
       <div class="blue"></div>
       <div class="blue1"></div>
@@ -31,15 +32,20 @@ __Código de base__
     <div class="subgeneral2">
       <div class="blue2"></div>
       <div class="blue3"></div>
-    </div>  
+    </div> 
   </div>
-  <div>
-    
-  </div>
+  <div class=yellow></div>
 </div>
 <style>
   * {
     margin: 0%;
+  }
+  .universal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
   }
   .general {
     width: 100%;
@@ -48,6 +54,9 @@ __Código de base__
     display: flex;
     flex-direction: column;
     gap: 20px;
+    justify-content: center;
+    align-items: center;
+
   }
   .subgeneral1, .subgeneral2 {
     width: 100%;
@@ -78,6 +87,12 @@ __Código de base__
   .blue3 {
    transform: rotate(225deg)  
   }
- 
+   .yellow{
+     position:absolute;
+     width: 60px;
+     height: 60px;
+     border-radius: 100%;
+     background: #EEB850;
+   }
 </style>
 ```
