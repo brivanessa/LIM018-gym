@@ -23,12 +23,61 @@ Escriba el HTML/CSS en el editor para replicar la imagen objetivo de la derecha.
 __Código de base__
 
 ```html
-    <div></div>
-    <style>
-      div {
-        width: 100px;
-        height: 100px;
-        background: #dd6b4d;
-      }
-    </style>
+<div class=general>
+    <div class="subgeneral1">
+      <div class="blue"></div>
+      <div class="blue1"></div>
+    </div>
+    <div class="subgeneral2">
+      <div class="blue2"></div>
+      <div class="blue3"></div>
+    </div>  
+  </div>
+  <div>
+    
+  </div>
+</div>
+<style>
+  * {
+    margin: 0%;
+  }
+  .general {
+    width: 100%;
+    height: 100%;
+    background: #243D83;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .subgeneral1, .subgeneral2 {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: end;
+    justify-content: center;
+    gap: 70px;
+ 
+  }
+   .subgeneral2 {
+    align-items: start;
+  }
+  
+   .blue, .blue1, .blue2, .blue3 {
+   width: 50px;
+   height: 100px;
+   border-radius: 200px 0 0 200px;
+   background: #6592CF;
+   transform: rotate(45deg)  
+  }
+  .blue1 {
+   transform: rotate(135deg)  
+  }
+  .blue2 {
+   transform: rotate(315deg)  
+  }
+  .blue3 {
+   transform: rotate(225deg)  
+  }
+ 
+</style>
 ```
