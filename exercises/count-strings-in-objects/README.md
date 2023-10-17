@@ -29,3 +29,4 @@ Entrada: obj = {
 Salida: 3
 Explicación: "1", "2" y "anytime" son los únicos strings presentes, contados dan 3
 ```
+__Solución__
